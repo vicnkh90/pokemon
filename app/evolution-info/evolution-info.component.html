@@ -1,0 +1,10 @@
+<div [class.hidden]="currentlyHidden">
+  <div [class.blue-text]="miscService.isElementBlue">
+    <h4>Evolution Info</h4>
+    <ul>
+      <li *ngFor="let evolution of evolutions">
+        {{ evolution.name }}
+      </li>
+    </ul>
+  </div>
+</div>
